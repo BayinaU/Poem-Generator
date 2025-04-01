@@ -15,19 +15,22 @@
       </header>
 
       <main>
-        <form id="form-generator">
-          <input
-            type="text"
-            placeholder="Pick a topic..."
-            autofocus
-            required
-            autocomplete="off"
-            class="instruction"
-            id="user-instruction"
-          />
-          <input type="submit" class="submit-button" />
-        </form>
-        <div class="poem" id="poem"></div>
+        <div class="form-container">
+          <form id="form-generator">
+            <input
+              type="text"
+              placeholder="Enter a theme for your poem"
+              autofocus
+              required
+              autocomplete="off"
+              class="instruction"
+              id="user-instruction"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="hint">i.e: Sunflower, Music or Pink</div>
+        </div>
+        <div class="poem hidden" id="poem"></div>
       </main>
 
       <footer>

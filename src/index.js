@@ -18,6 +18,9 @@ function generatePoem(event) {
   let prompt = `User Instruction: Generate any poem about ${instructionInput.value}`;
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+  let poemElement = document.querySelector("#poem");
+  poemElement.classList.remove("hidden");
+  poemElement.innerHTML = `<div class="generating">💭Generating a poem for you about ${instructionInput.value}...</div>`;
   console.log("Generating Poem");
   console.log(`prompt: ${prompt}`);
   console.log(`context: ${context}`);
